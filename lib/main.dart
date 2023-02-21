@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'column_widget.dart';
+import 'row_widget.dart';
+import 'container_widget.dart';
+import 'latihan_widget.dart';
+import 'latihan/latihan_satu.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,20 +17,45 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Latihan Flutter",
       home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 214, 152, 60),
-          centerTitle: true,
-          title: Text("Latihan"),
-        ),
-        body: Center(
-          child: Text("Halo Dunia", 
-          style: TextStyle(
-            fontSize: 24, 
-            fontWeight: FontWeight.bold,
-            color: Color.fromARGB(255, 8, 6, 5),
-            backgroundColor: Color.fromARGB(255, 207, 198, 198),
-            ),
-          ),
+        // appBar: AppBar(
+        //   backgroundColor: Color.fromARGB(255, 197, 197, 197),
+        //   centerTitle: true,
+        //   title: Text("Home"),
+        // ),
+        body: LatihanSatu(),
+        // body: Column(
+        //   children: [
+        //     RowWidget(),
+        //     Padding(
+        //       padding: EdgeInsets.only(top: 20)
+        //     ),
+        //     ColumnWidget(),
+        //     Padding(
+        //       padding: EdgeInsets.only(top: 20)
+        //     ),
+        //     ContainerWidget(),
+        //   ],
+        // ),
+      ),
+      debugShowCheckedModeBanner: false,
+    );
+  }
+}
+
+class WidgetPertama extends StatelessWidget {
+  const WidgetPertama({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Text("Hello World", 
+      style: TextStyle(
+        fontSize: 24, 
+        fontWeight: FontWeight.bold,
+        color: Color.fromARGB(255, 8, 6, 5),
+        backgroundColor: Color.fromARGB(255, 207, 198, 198),
         ),
       ),
     );
