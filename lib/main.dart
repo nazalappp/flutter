@@ -4,6 +4,9 @@ import 'row_widget.dart';
 import 'container_widget.dart';
 import 'latihan_widget.dart';
 import 'latihan/latihan_satu.dart';
+import 'list_view/list_view.dart';
+import 'list_view/list_view_builder.dart';
+import 'list_view/latihan_list_view.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,12 +20,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Latihan Flutter",
       home: Scaffold(
-        // appBar: AppBar(
-        //   backgroundColor: Color.fromARGB(255, 197, 197, 197),
-        //   centerTitle: true,
-        //   title: Text("Home"),
-        // ),
-        body: LatihanSatu(),
+        appBar: AppBar(
+          backgroundColor: Color.fromARGB(255, 233, 86, 86),
+          centerTitle: true,
+          title: Text("Product Listing"),
+        ),
+        body: LatihanListViewWidget(),
+        // body: ListViewWidget(),
+        // body: LatihanSatu(),
         // body: Column(
         //   children: [
         //     RowWidget(),
