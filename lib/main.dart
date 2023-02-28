@@ -7,9 +7,10 @@ import 'latihan/latihan_satu.dart';
 import 'list_view/list_view.dart';
 import 'list_view/list_view_builder.dart';
 import 'list_view/latihan_list_view.dart';
+import 'list_view/latihan_list_view2.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MyApp());  
 }
 
 class MyApp extends StatelessWidget {
@@ -18,14 +19,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return MaterialApp(
-      title: "Latihan Flutter",
+      title: "UJIKOM",
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 233, 86, 86),
+          backgroundColor: Color.fromARGB(255, 4, 154, 224),
           centerTitle: true,
-          title: Text("Product Listing"),
+          title: Text("Anime Gratis "),
         ),
-        body: LatihanListViewWidget(),
+        body: LatihanListViewWidget2(),
         // body: ListViewWidget(),
         // body: LatihanSatu(),
         // body: Column(

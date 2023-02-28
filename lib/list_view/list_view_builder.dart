@@ -18,6 +18,7 @@ class ListViewBuilderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      scrollDirection: Axis.vertical,
       itemBuilder: (context, index) {
         return Card(
           child: Padding(
